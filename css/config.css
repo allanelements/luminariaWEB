@@ -1,0 +1,15 @@
+/* Estilos para o container */
+.container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Estilos para a lista de dispositivos */
+.device-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.device-list li {
+    margin-bottom: 10px;
+}

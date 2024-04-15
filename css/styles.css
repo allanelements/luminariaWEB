@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+#reconnectButton {
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+.header {
+    padding: 5px 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+img {
+    width: 100%;
+    height: auto;
+    max-width: 80%;
+    margin: 20px auto;
+    display: block;
+}
+.switch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.switch-label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    display: none;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #7c21f3;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #7c21f3;
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.button-container h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.button-container button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    flex: 0 0 calc(33.333% - 10px);
+    max-width: calc(33.333% - 10px);
+}
+
+.button-selected {
+    background-color: #7c21f3;
+    color: white; 
+}
+
+
+.button-not-selected {
+    background-color: rgb(230, 230, 230); 
+    color: black; 
+}

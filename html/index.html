@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Controle de Luminária</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="logo" src="https://elements.com.br/cdn/shop/files/Group_1.png?v=1702562143&width=50" onclick="window.location.href='https://elements.com.br/'" alt="Logo">
+        </div>
+        <h2>Luminária Solare</h2>
+        <div id="disconnectedMessage" style="display: none; color: red; font-weight: bold;">Dispositivo desconectado</div>
+        <button id="reconnectButton" style="display: none;">Conectar Novamente</button>
+        <div class="switch-container">
+            <label class="switch-label">ON/OFF</label>
+            <label class="switch">
+                <input id="onOffSwitch" type="checkbox" onchange="toggleOnOff(this)">
+                <span class="slider round"></span>
+            </label>
+            <label class="switch-label">Modo Automático</label>
+            <label class="switch">
+                <input id="modoAutomaticoSwitch" type="checkbox" onchange="toggleModoAutomatico(this)">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="button-container">
+            <h2>Escolha a luz do horário que deseja:</h2>
+            <button onclick="setLight(8)"data-hour="8">8:00hrs</button>
+            <button onclick="setLight(10)"data-hour="10">10:00hrs</button>
+            <button onclick="setLight(12)"data-hour="12">12:00hrs</button>
+            <button onclick="setLight(14)"data-hour="14">14:00hrs</button>
+            <button onclick="setLight(16)"data-hour="16">16:00hrs</button>
+            <button onclick="setLight(18)"data-hour="18">18:00hrs</button>
+        </div>
+    </div>
+    <div class="NT-footer-icones">
+        <!-- Restante do código para os ícones -->
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
